@@ -17,6 +17,15 @@ function addNewAnime() {
 
     inputField.value = ''
 }
+console.log({ inputField })
 
 inputField.addEventListener('change', newAnimeHandler)
 AnimeBtn.addEventListener('click', addNewAnime)
+
+// document.getElementById('Anime-btn')
+//     .addEventListener('keyup', function(event) {
+//         if (event.code === 'Enter') {
+//             event.preventDefault();
+//             document.querySelector('form').submit();
+//         }
+//     });
