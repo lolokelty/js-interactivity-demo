@@ -17,10 +17,19 @@ function addNewAnime() {
 
     inputField.value = ''
 }
-console.log({ inputField })
 
-inputField.addEventListener('change', newAnimeHandler)
+///need input Xchange
+inputField.addEventListener('input', newAnimeHandler)
 AnimeBtn.addEventListener('click', addNewAnime)
+
+///code for Enter Key Bind
+inputField.addEventListener('keydown', (e) => {
+    if (e.keyCode === 13) {
+        addNewAnime()
+        console.log(13)
+    }
+    console.log('Test')
+});
 
 // document.getElementById('Anime-btn')
 //     .addEventListener('keyup', function(event) {
